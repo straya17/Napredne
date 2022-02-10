@@ -1,0 +1,1 @@
+// ovo je n=takoddje nesto sa casa zapisano
