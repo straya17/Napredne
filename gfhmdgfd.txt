@@ -37,3 +37,23 @@ function resenja2(niz){
 }
 
 
+
+var obj = {
+    ime: "Pavle",
+}
+function changeObj(object){
+    object.prezime = "Maodus";
+}
+
+
+// Uraditi zadatak pod 2 ponovo all sa izmenom u formatu duzine pesme
+// tako da ne bude sekunde nego u stringu minut:sekunda.
+//Kako se sada menja zadatak?
+var songs = [  { title: "A", Lenght: "2:30, author: "AA" },
+               { title: "B", Lenght: "3:15, author: "BB" },
+               { title: "C", Lenght: "6:43, author: "CC" },
+            ]
+function songSeconds(duzina){
+    var sekundeNiz = duzina.split(':')
+    return 0 + sekundeNiz[0]*60 = sekundeNiz[1]
+}
