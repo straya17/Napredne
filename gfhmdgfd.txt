@@ -1,4 +1,39 @@
-gfhmdgfd
-,jfjhf
-lkh
-jh.
+// Napisati javascript arrow function koji vraca
+//u niz po sledecem pravilima
+// -  Iz svakog objekta uzima atribut pod
+//imenom ID i proverava da li postoji
+// - Ako postoji prebacuje ga u niz, ako ne prebrojava ih i 
+//funkcija vraca broj nepostojecih ID-eva
+var nizObj = [
+    {
+        ID:4,
+        IME:"Pavle"
+    }
+    {
+        ID:2,
+        IME:"Rale"
+    }
+    {
+        ID:3
+        IME:"Nikola"
+    }
+    {
+        ID:9
+        IME:"Andrej"
+    },
+]
+var nizResenja = [];
+function resenja2(niz){
+    var brojac = 0;
+    niz.forEach((value) =>{
+        if(value.ID !=undefined){
+            nizResenja.push(value.ID)
+        }
+        else{
+            brojac++;
+        }
+    })
+    return brojac;
+}
+
+
